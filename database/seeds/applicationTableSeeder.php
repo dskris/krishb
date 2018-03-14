@@ -1,6 +1,7 @@
 <?php
 
 use Illuminate\Database\Seeder;
+use Carbon\Carbon;
 
 class applicationTableSeeder extends Seeder
 {
@@ -14,7 +15,7 @@ class applicationTableSeeder extends Seeder
         DB::table('application')->insert([
         	[
 	            'name' => 'name',
-	        	'applicationDate' => new Date,
+	        	'applicationDate' => Carbon::now()->toDateString(),
 	        	'uploadedResume' => 'pathtoresume',
 	        	'phoneNumber' => '0128928993',
 	        	'currentCompany' => 'company abc',

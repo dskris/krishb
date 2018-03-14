@@ -13,18 +13,16 @@ class galleryTableSeeder extends Seeder
     {
          DB::table('gallery')->insert([
     		[
-		        	'mainCategoryID' => 1,
-		        	'subCategoryID' => 1,
-		        	'path' => 'public/img/pic.png',
+		        	'title' => 'title',
+		        	'listingVideo' => 'public/video/pic.png',
+		        	'listingImagesID' => 1,
+		        	'biography' => 'lorem ipsum',
+		        	'mainImage' => 1,
+		        	'status' => 1,
 		        	'created_at' => new DateTime,
 		        	'updated_at' => new DateTime
 		     ],
-		     [
-		        	'mainCategoryID' => 1,
-		        	'subCategoryID' => 2,
-		        	'path' => 'public/img/pic.png',
-		        	'created_at' => new DateTime,
-		        	'updated_at' => new DateTime
-		     ],
+
+		 ]);
     }
 }

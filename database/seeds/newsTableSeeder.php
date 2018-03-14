@@ -1,6 +1,7 @@
 <?php
 
 use Illuminate\Database\Seeder;
+use Carbon\Carbon;
 
 class newsTableSeeder extends Seeder
 {
@@ -11,10 +12,11 @@ class newsTableSeeder extends Seeder
      */
     public function run()
     {
+
          DB::table('news')->insert([
         	[
 	            'title' => 'title',
-	        	'newsDate' => new Date,
+	        	'newsDate' => Carbon::now()->toDateString(),
 	        	'newsLocation' => 'location',
 	        	'fullNews' => 'lorem ipsum',
 	        	'videosID' => 1,

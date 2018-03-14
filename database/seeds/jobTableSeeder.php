@@ -16,7 +16,7 @@ class jobTableSeeder extends Seeder
 	            'title' => 'job 1',
 	            'minimumWorkExperience' => 5,
 	            'state' => 'state',
-	            'country' => 1,
+	            'countryID' => 1,
 	            'responsibilities' => 'eating',
 	            'workLocation' => 'Subang',
 	            'jobLevelID' => 1,

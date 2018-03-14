@@ -15,7 +15,7 @@ class propertyTableSeeder extends Seeder
         	[
 	            'name' => 'property',
 		        'tenure' => 'tenure',
-		        'salesStatusID' => 1,
+		        'saleStatusID' => 1,
 		        'type' => 'type',
 		        'price' => 9500000,
 		        'builtSize' => 1600,

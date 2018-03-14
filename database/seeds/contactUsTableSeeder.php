@@ -16,7 +16,6 @@ class contactUsTableSeeder extends Seeder
 	            'name' => 'admin',
 	        	'email' => 'kris26ooi@gmail.com',
 	        	'phoneNumber' => '0128939003',
-	        	'employeeCategoryID' => 1,
 	        	'message' => 'lorem ipsum',
 	        	'status' => 1,
 	        	'futurePromoID' => 1,

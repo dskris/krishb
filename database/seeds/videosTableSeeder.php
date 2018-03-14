@@ -17,5 +17,6 @@ class videosTableSeeder extends Seeder
 		        	'created_at' => new DateTime,
 		        	'updated_at' => new DateTime
 		     ],
+        ]);
     }
 }
