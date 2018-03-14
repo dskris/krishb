@@ -1,0 +1,65 @@
+@extends('layouts.homeandaway')
+
+@section('title')
+    Welcome
+@endsection
+
+@section('page-content')
+
+    <div class="col-md-8 col-md-offset-3">
+        <h2 class="text-center">Gallery Edit</h2>
+        <br />
+        <div class="panel panel-default">
+           
+
+            <div class="row">
+    <form action="{{ route('services.update', [$services->id])}}" method='POST' enctype="multipart/form-data">
+    {{csrf_field()}}
+     <input type="hidden" name='_method' value='PUT'>
+       <div class="col-xs-12 col-md-7 col-lg-7 form-group">
+        Name:
+        <input type="text" name="name" class='form-control input' value='{{$services->service_name}}'>
+    </div>
+     <div class="col-xs-12 col-md-7 col-lg-7 form-group">
+        Description:
+        <input type="text" name="description" class='form-control input' value='{{$services->service_description}}'>
+    </div>
+     <div class="col-xs-12 col-md-7 col-lg-7 form-group">
+         Photo Path:
+        <img width="65" id="home_team_change" src="{{url('/assets/img/gallery').'/'.$services->photo_path}}">
+        <input type="file" name="image" onchange="readHomeUrl(this);"/>
+    </div>
+
+    <div class="col-xs-12 form-group">
+        <input type="submit" value='Update Task' class='btn btn-success'>
+        <a href="#" class='btn btn-danger'>Go Back</a>
+</div>
+</form>
+</div>
+                  
+        </div><!-- /.panel panel-default -->
+    </div><!-- /.col-md-8 -->
+
+
+@endsection
+
+@section('customJS')
+
+<script>
+
+ function readHomeUrl(input) {
+            if (input.files && input.files[0]) {
+                var reader = new FileReader();
+
+                reader.onload = function (e) {
+                    $('#home_team_change').attr('src', e.target.result);
+                }
+
+                reader.readAsDataURL(input.files[0]);
+            }
+        }
+
+</script>
+
+@endsection
+

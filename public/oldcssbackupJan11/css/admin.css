@@ -1,0 +1,85 @@
+.add-button{
+    width: 80px;
+    padding: 20px 10px !important;
+    border-radius: 100% !important;
+    position: fixed;
+    right: 3%;
+    bottom: 5%;
+}
+
+i.glyphicon-size {
+    font-size: 3em;
+}
+
+nav.navbar {
+    background-color: #337ab7;
+}
+
+.navbar-brand{
+    color:white !important;
+}
+.navbar-header-icon{
+    color:white !important;
+}
+
+.mobile-scan-page{
+    
+}
+
+#overlay {
+    position: fixed;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    background: #000;
+    opacity: 0.8;
+    z-index: 99999;
+    filter: alpha(opacity=80);
+}
+#loading {
+    width: 75px;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    margin: -28px 0 0 -25px;
+}
+
+#loading-text {
+    top: 60%;
+    left: 45%;
+    position: absolute;
+    color:white;
+}
+
+/* from the crud on github*/
+
+  .panel-heading {
+            padding: 0;
+        }
+        .panel-heading ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+        }
+        .panel-heading li {
+            float: left;
+            border-right:1px solid #bbb;
+            display: block;
+            padding: 14px 16px;
+            text-align: center;
+        }
+        .panel-heading li:last-child:hover {
+            background-color: #ccc;
+        }
+        .panel-heading li:last-child {
+            border-right: none;
+        }
+        .panel-heading li a:hover {
+            text-decoration: none;
+        }
+
+        .table.table-bordered tbody td {
+            vertical-align: baseline;
+        }
